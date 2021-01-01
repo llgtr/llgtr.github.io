@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>llgtr</title>
+    <title>cv on llgtr</title>
     <link>https://www.llgtr.com/cv/</link>
-    <description>Recent content on llgtr</description>
+    <description>Recent content in cv on llgtr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://www.llgtr.com/cv/index.xml" rel="self" type="application/rss+xml" />
   </channel>
