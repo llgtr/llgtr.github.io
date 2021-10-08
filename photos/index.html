@@ -10,10 +10,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.217717e19a2a4f7c97bacd2a878fba933ebb7b98f270e4990d01c807258e8596.css" integrity="sha256-IXcX4ZoqT3yXus0qh4&#43;6kz67e5jycOSZDQHIByWOhZY=">
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.e7dbdf40ffceda3be5d74e103ab5a9fd92befa51d086c1b9df7ba32e7aa83678.css" integrity="sha256-59vfQP/O2jvl104QOrWp/ZK&#43;&#43;lHQhsG533ujLnqoNng=">
+
+  <script>
+    const toggleFrame = (event) => {
+      document.getElementById("veil").classList.toggle("visible")
+      const imgElem = document.getElementById("focusedImg")
+      if (event) {
+        imgElem.src = event.src
+      }
+    }
+  </script>
 </head>
 
 <body>
+  <div id="veil" class="veil" onclick="toggleFrame()">
+    <img id="focusedImg" class="focus" src="">
+  </div>
   <div class="container">
     <nav class="flex row centered nav">
   
