@@ -5,78 +5,70 @@
     <link>https://www.llgtr.com/photos/</link>
     <description>Recent content in photos on llgtr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.llgtr.com/photos/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://www.llgtr.com/photos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Korea</title>
+      <link>https://www.llgtr.com/photos/korea-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.llgtr.com/photos/korea-2024/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Japan</title>
       <link>https://www.llgtr.com/photos/japan-2023/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/japan-2023/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Iceland</title>
       <link>https://www.llgtr.com/photos/iceland-2022/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/iceland-2022/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Norway and Lapland</title>
       <link>https://www.llgtr.com/photos/norway-lapland-2021/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/norway-lapland-2021/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Norway</title>
       <link>https://www.llgtr.com/photos/norway-2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/norway-2020/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Jordan</title>
       <link>https://www.llgtr.com/photos/jordan-2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/jordan-2018/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Kenya</title>
       <link>https://www.llgtr.com/photos/kenya-2017/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/kenya-2017/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Zambia</title>
       <link>https://www.llgtr.com/photos/zambia-2011/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/zambia-2011/</guid>
       <description> </description>
     </item>
-    
     <item>
       <title>Misc</title>
       <link>https://www.llgtr.com/photos/misc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://www.llgtr.com/photos/misc/</guid>
       <description> </description>
     </item>
-    
   </channel>
 </rss>

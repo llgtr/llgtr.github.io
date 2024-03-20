@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.llgtr.com/photos/korea-2024/</loc>
+  </url><url>
     <loc>https://www.llgtr.com/photos/japan-2023/</loc>
   </url><url>
     <loc>https://www.llgtr.com/photos/iceland-2022/</loc>
@@ -19,10 +21,12 @@
     <loc>https://www.llgtr.com/photos/misc/</loc>
   </url><url>
     <loc>https://www.llgtr.com/</loc>
-  </url><url>
-    <loc>https://www.llgtr.com/cv/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.llgtr.com/notes/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.llgtr.com/cv/</loc>
   </url><url>
     <loc>https://www.llgtr.com/photos/</loc>
   </url>
