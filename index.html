@@ -11,11 +11,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.4fb8509f2fc0394a0d396afc8032ea88bd2dcb758dd22aeeae83622d5bbae2f0.css" integrity="sha256-T7hQny/AOUoNOWr8gDLqiL0ty3WN0iruroNiLVu64vA=">
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.1af5ff7f988bf47459928dae2240c83e1a3cc667a4d6f3e56436a90489c3bea6.css" integrity="sha256-GvX/f5iL9HRZko2uIkDIPho8xmek1vPlZDapBInDvqY=">
 
   <script>
     const toggleFrame = (event) => {
-      document.getElementById("veil").classList.toggle("visible")
+      document.getElementById("veil").classList.toggle("active")
+      document.body.classList.toggle("veil-visible")
       const imgElem = document.getElementById("focusedImg")
       if (event) {
         imgElem.src = event.src
