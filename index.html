@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.ccfd56eb8d520c8f6b9ef279d5d888453992253322709550d023059454483188.css" integrity="sha256-zP1W641SDI9rnvJ51diIRTmSJTMicJVQ0CMFlFRIMYg=">
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.55a069292cad53e8be430868d25086f6ae4079b1238610e2a4cd5246dba13f79.css" integrity="sha256-VaBpKSytU&#43;i&#43;Qwho0lCG9q5AebEjhhDipM1SRtuhP3k=">
 
   
   
@@ -19,8 +19,20 @@
 </head>
 
 <body>
-  <div id="veil" class="veil" onclick="toggleFrame()">
-    <img id="focusedImg" class="focus" src="">
+  <div id="lightbox" class="lightbox">
+    <div id="lb-backdrop" class="lb-backdrop"></div>
+    <button id="lb-prev" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <img id="lb-img" class="lb-img" src="">
+    <button id="lb-next" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <button id="lb-close" class="lb-close"><img src="/icons/x.svg"></button>
   </div>
   <div class="container">
     <nav class="flex row centered nav">

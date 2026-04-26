@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.ccfd56eb8d520c8f6b9ef279d5d888453992253322709550d023059454483188.css" integrity="sha256-zP1W641SDI9rnvJ51diIRTmSJTMicJVQ0CMFlFRIMYg=">
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.55a069292cad53e8be430868d25086f6ae4079b1238610e2a4cd5246dba13f79.css" integrity="sha256-VaBpKSytU&#43;i&#43;Qwho0lCG9q5AebEjhhDipM1SRtuhP3k=">
 
   
   
@@ -18,8 +18,20 @@
 </head>
 
 <body>
-  <div id="veil" class="veil" onclick="toggleFrame()">
-    <img id="focusedImg" class="focus" src="">
+  <div id="lightbox" class="lightbox">
+    <div id="lb-backdrop" class="lb-backdrop"></div>
+    <button id="lb-prev" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <img id="lb-img" class="lb-img" src="">
+    <button id="lb-next" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <button id="lb-close" class="lb-close"><img src="/icons/x.svg"></button>
   </div>
   <div class="container">
     <nav class="flex row centered nav">
@@ -69,153 +81,183 @@
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001287_hu_1601c7e6346a0bdc.jpg"
-      width="2960"
-      height="1974"
+      src="/img/gallery/b2024/KS001287_hu_4003f89a9b3dbf06.jpg"
+      data-full="/img/gallery/b2024/KS001287_hu_86ae81b0cfd7e08b.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001290_hu_c1bd648cee3783e3.jpg"
-      width="2089"
-      height="1393"
+      src="/img/gallery/b2024/KS001290_hu_725bc91fbb40657f.jpg"
+      data-full="/img/gallery/b2024/KS001290_hu_ab25e40f39477dfb.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001301_hu_f6535d01ab2b588c.jpg"
-      width="1677"
-      height="2516"
+      src="/img/gallery/b2024/KS001301_hu_2fb7ae35cbf5cef3.jpg"
+      data-full="/img/gallery/b2024/KS001301_hu_eb1fa6f00d115248.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001304_hu_a54ec638ea899e92.jpg"
-      width="1689"
-      height="2534"
+      src="/img/gallery/b2024/KS001304_hu_28d6e533299bab3e.jpg"
+      data-full="/img/gallery/b2024/KS001304_hu_7a41927ad0a59481.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001344_hu_58d32095529441eb.jpg"
-      width="2966"
-      height="1977"
+      src="/img/gallery/b2024/KS001344_hu_3970306922ff5dfc.jpg"
+      data-full="/img/gallery/b2024/KS001344_hu_b38d72e218f8e02c.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001352_hu_aad6b6a1af4749c7.jpg"
-      width="2758"
-      height="1839"
+      src="/img/gallery/b2024/KS001352_hu_b04440ad1cdfb0a4.jpg"
+      data-full="/img/gallery/b2024/KS001352_hu_9a2c23cda1aef6bb.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001363_hu_7b2d0fdd832ef78d.jpg"
-      width="2000"
-      height="3000"
+      src="/img/gallery/b2024/KS001363_hu_af11105245466e9a.jpg"
+      data-full="/img/gallery/b2024/KS001363_hu_706f627e5c241d8a.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001399_hu_dd4fcc3804b374ea.jpg"
-      width="2562"
-      height="1708"
+      src="/img/gallery/b2024/KS001399_hu_d989e0ee96d44e7a.jpg"
+      data-full="/img/gallery/b2024/KS001399_hu_9b966a8d306a402c.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001404_hu_aa75e93bd7ea1682.jpg"
-      width="1872"
-      height="1248"
+      src="/img/gallery/b2024/KS001404_hu_92349fe31590d72a.jpg"
+      data-full="/img/gallery/b2024/KS001404_hu_eddf8ae141317e97.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001448_hu_89ab9cbd118ef2dd.jpg"
-      width="2373"
-      height="1582"
+      src="/img/gallery/b2024/KS001448_hu_4de867878d31f63f.jpg"
+      data-full="/img/gallery/b2024/KS001448_hu_23d3db3e5c8bfc00.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001471_hu_c96046c7a7022e81.jpg"
-      width="1719"
-      height="2579"
+      src="/img/gallery/b2024/KS001471_hu_c2a1d65a64721a79.jpg"
+      data-full="/img/gallery/b2024/KS001471_hu_6909b2ba07fb142f.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001483_hu_da88850dc51cea14.jpg"
-      width="2000"
-      height="3000"
+      src="/img/gallery/b2024/KS001483_hu_6cd7605b2fb70877.jpg"
+      data-full="/img/gallery/b2024/KS001483_hu_e3770686311e4809.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001485_hu_f1e97311037f7423.jpg"
-      width="1554"
-      height="2331"
+      src="/img/gallery/b2024/KS001485_hu_5a7886e7ee0bda27.jpg"
+      data-full="/img/gallery/b2024/KS001485_hu_cf78117ecff84f81.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001498_hu_27e75a20cd416e58.jpg"
-      width="3000"
-      height="2000"
+      src="/img/gallery/b2024/KS001498_hu_321b61702a76ea27.jpg"
+      data-full="/img/gallery/b2024/KS001498_hu_e335f1602b204e18.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/b2024/KS001504_hu_1c2f7ee421ec2252.jpg"
-      width="2275"
-      height="1517"
+      src="/img/gallery/b2024/KS001504_hu_ab059a35d2bba74.jpg"
+      data-full="/img/gallery/b2024/KS001504_hu_38e8810d9a82b691.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
   
 </div>

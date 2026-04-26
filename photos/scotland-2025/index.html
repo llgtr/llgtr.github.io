@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.ccfd56eb8d520c8f6b9ef279d5d888453992253322709550d023059454483188.css" integrity="sha256-zP1W641SDI9rnvJ51diIRTmSJTMicJVQ0CMFlFRIMYg=">
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.55a069292cad53e8be430868d25086f6ae4079b1238610e2a4cd5246dba13f79.css" integrity="sha256-VaBpKSytU&#43;i&#43;Qwho0lCG9q5AebEjhhDipM1SRtuhP3k=">
 
   
   
@@ -18,8 +18,20 @@
 </head>
 
 <body>
-  <div id="veil" class="veil" onclick="toggleFrame()">
-    <img id="focusedImg" class="focus" src="">
+  <div id="lightbox" class="lightbox">
+    <div id="lb-backdrop" class="lb-backdrop"></div>
+    <button id="lb-prev" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <img id="lb-img" class="lb-img" src="">
+    <button id="lb-next" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <button id="lb-close" class="lb-close"><img src="/icons/x.svg"></button>
   </div>
   <div class="container">
     <nav class="flex row centered nav">
@@ -69,63 +81,75 @@
   
     
     
+    
+    
     <img
-      src="/img/gallery/s2025/KS002032_hu_fddfb6a27dce2b90.jpg"
-      width="3000"
-      height="2000"
+      src="/img/gallery/s2025/KS002032_hu_3b4a054abc22f0b3.jpg"
+      data-full="/img/gallery/s2025/KS002032_hu_45ade69213ee866e.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/s2025/KS002063_hu_88a83bfefc192347.jpg"
-      width="3000"
-      height="2000"
+      src="/img/gallery/s2025/KS002063_hu_6df9ca8bd3d7222d.jpg"
+      data-full="/img/gallery/s2025/KS002063_hu_e99f8dc42e3c965a.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/s2025/KS002087_hu_c902a208316c3273.jpg"
-      width="3000"
-      height="2000"
+      src="/img/gallery/s2025/KS002087_hu_d2d9910fee06c670.jpg"
+      data-full="/img/gallery/s2025/KS002087_hu_c6820d9f052b418d.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/s2025/KS002090_hu_70d522ed8c0dda0.jpg"
-      width="3000"
-      height="2000"
+      src="/img/gallery/s2025/KS002090_hu_1cabcbd84618ec3.jpg"
+      data-full="/img/gallery/s2025/KS002090_hu_175465f9e78860ec.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/s2025/KS002108_hu_997d10f492b0b49.jpg"
-      width="1686"
-      height="2529"
+      src="/img/gallery/s2025/KS002108_hu_41811a0feb92591c.jpg"
+      data-full="/img/gallery/s2025/KS002108_hu_e669a4f6600f925c.jpg"
+      width="600"
+      height="900"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/s2025/KS002119_hu_3a5fc06a200bacf3.jpg"
-      width="3000"
-      height="2000"
+      src="/img/gallery/s2025/KS002119_hu_1eab9535bf91f11b.jpg"
+      data-full="/img/gallery/s2025/KS002119_hu_f110fc1fc800a2d2.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
   
 </div>

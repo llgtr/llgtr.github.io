@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.ccfd56eb8d520c8f6b9ef279d5d888453992253322709550d023059454483188.css" integrity="sha256-zP1W641SDI9rnvJ51diIRTmSJTMicJVQ0CMFlFRIMYg=">
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.55a069292cad53e8be430868d25086f6ae4079b1238610e2a4cd5246dba13f79.css" integrity="sha256-VaBpKSytU&#43;i&#43;Qwho0lCG9q5AebEjhhDipM1SRtuhP3k=">
 
   
   
@@ -18,8 +18,20 @@
 </head>
 
 <body>
-  <div id="veil" class="veil" onclick="toggleFrame()">
-    <img id="focusedImg" class="focus" src="">
+  <div id="lightbox" class="lightbox">
+    <div id="lb-backdrop" class="lb-backdrop"></div>
+    <button id="lb-prev" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <img id="lb-img" class="lb-img" src="">
+    <button id="lb-next" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <button id="lb-close" class="lb-close"><img src="/icons/x.svg"></button>
   </div>
   <div class="container">
     <nav class="flex row centered nav">
@@ -69,33 +81,39 @@
   
     
     
+    
+    
     <img
-      src="/img/gallery/dc2024/KS001535_hu_e632ce5618dde7a3.jpg"
-      width="2890"
-      height="1927"
+      src="/img/gallery/dc2024/KS001535_hu_c0dc9c2d0b70e56.jpg"
+      data-full="/img/gallery/dc2024/KS001535_hu_9365f119a83284c4.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/dc2024/KS001551_hu_36479753246ff330.jpg"
-      width="2512"
-      height="1675"
+      src="/img/gallery/dc2024/KS001551_hu_39a8754743100ac8.jpg"
+      data-full="/img/gallery/dc2024/KS001551_hu_ae7e9c54d93ce4ed.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
     
     
+    
+    
     <img
-      src="/img/gallery/dc2024/KS001552_hu_857bf578ff7105cf.jpg"
-      width="2893"
-      height="1929"
+      src="/img/gallery/dc2024/KS001552_hu_988e6b2990fed75b.jpg"
+      data-full="/img/gallery/dc2024/KS001552_hu_147d321cd7eed8c4.jpg"
+      width="600"
+      height="400"
       onclick="toggleFrame(this)"
     >
-    
   
   
 </div>
