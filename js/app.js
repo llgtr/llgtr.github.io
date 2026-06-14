@@ -1,12 +1,12 @@
-(()=>{var E=(()=>{let t=0,n=o=>document.getElementById(o),s=o=>{n("lb-img").src="",t=o,n("lb-img").src=images[t].dataset.full||images[t].src},d=o=>{let m=o.closest(".gallery")||o.closest("figure");images=m?[...m.querySelectorAll("img")]:[o];let r=images.indexOf(o);s(r>=0?r:0),n("lightbox").classList.add("active"),document.body.style.overflow="hidden",document.addEventListener("keydown",f)},l=()=>{n("lightbox").classList.remove("active"),document.body.style.overflow="",document.removeEventListener("keydown",f)},i=()=>{t>0&&s(t-1)},e=()=>{t<images.length-1&&s(t+1)},f=o=>{o.key==="Escape"&&l(),o.key==="ArrowLeft"&&i(),o.key==="ArrowRight"&&e()};return n("lb-close")?.addEventListener("click",l),n("lb-prev")?.addEventListener("click",i),n("lb-next")?.addEventListener("click",e),{open:d}})();window.toggleFrame=t=>E.open(t);var q=()=>{let t=document.getElementById("hero-canvas"),n=document.getElementById("hero-text");if(!t||!n)return;let s=.2,d=!1,l=()=>{d=!0},i=()=>{d=!1};t.addEventListener("mousedown",l),t.addEventListener("mouseup",i),t.addEventListener("mouseleave",i),t.addEventListener("touchstart",c=>{c.preventDefault(),l()},{passive:!1}),t.addEventListener("touchend",i),t.addEventListener("touchcancel",i);let e=t.getContext("webgl");if(!e){n.style.display="block";return}let f=`
-    attribute vec2 pos;
+(()=>{var E=(()=>{let t=0,r=o=>document.getElementById(o),i=o=>{r("lb-img").src="",t=o,r("lb-img").src=images[t].dataset.full||images[t].src},l=o=>{let m=o.closest(".gallery")||o.closest("figure");images=m?[...m.querySelectorAll("img")]:[o];let n=images.indexOf(o);i(n>=0?n:0),r("lightbox").classList.add("active"),document.body.style.overflow="hidden",document.addEventListener("keydown",f)},d=()=>{r("lightbox").classList.remove("active"),document.body.style.overflow="",document.removeEventListener("keydown",f)},s=()=>{t>0&&i(t-1)},e=()=>{t<images.length-1&&i(t+1)},f=o=>{o.key==="Escape"&&d(),o.key==="ArrowLeft"&&s(),o.key==="ArrowRight"&&e()};return r("lb-close")?.addEventListener("click",d),r("lb-prev")?.addEventListener("click",s),r("lb-next")?.addEventListener("click",e),{open:l}})();window.toggleFrame=t=>E.open(t);var q=()=>{let t=document.getElementById("hero-canvas"),r=document.getElementById("hero-text");if(!t||!r)return;let i=.2,l=!1,d=()=>{l=!0},s=()=>{l=!1};t.addEventListener("mousedown",d),t.addEventListener("mouseup",s),t.addEventListener("mouseleave",s),t.addEventListener("touchstart",c=>{c.preventDefault(),d()},{passive:!1}),t.addEventListener("touchend",s),t.addEventListener("touchcancel",s);let e=t.getContext("webgl");if(!e){r.style.display="block";return}let f=`
+    attribute vec2 position;
 
-    void main() { gl_Position = vec4(pos, 0.0, 1.0); }
+    void main() { gl_Position = vec4(position, 0.0, 1.0); }
   `,o=`
     precision mediump float;
 
-    uniform float t;
-    uniform vec2 res;
+    uniform float angle;
+    uniform vec2 resolution;
 
     mat2 rot(in float a) {
         return mat2(cos(a), sin(a), -sin(a), cos(a));
@@ -48,15 +48,15 @@
     }
 
     void main() {
-        vec2 uv = gl_FragCoord.xy / res.xy * 2.0 - 1.0;
-        uv.y *= res.y / res.x;
+        vec2 uv = gl_FragCoord.xy / resolution.xy * 2.0 - 1.0;
+        uv.y *= resolution.y / resolution.x;
 
         vec3 from = vec3(-40, 5.0, 0);
         vec3 dir = normalize(vec3(uv * 0.3, 1.0));
         dir.xz *= rot(3.1415 * .5);
         dir.xy *= rot(3.1415 * .0165);
 
-        mat2 rotxz = rot(t + 800.0);
+        mat2 rotxz = rot(angle + 800.0);
         mat2 rotxy = rot(0.0);
 
         from.xy *= rotxy;
@@ -91,4 +91,4 @@
             gl_FragColor = vec4(value, 1.0);
         }
     }
-  `;function m(c,v){let a=e.createShader(c);return e.shaderSource(a,v),e.compileShader(a),a}let r=e.createProgram();if(e.attachShader(r,m(e.VERTEX_SHADER,f)),e.attachShader(r,m(e.FRAGMENT_SHADER,o)),e.linkProgram(r),!e.getProgramParameter(r,e.LINK_STATUS))return;e.useProgram(r),e.enable(e.BLEND),e.blendFunc(e.SRC_ALPHA,e.ONE_MINUS_SRC_ALPHA);let h=e.createBuffer();e.bindBuffer(e.ARRAY_BUFFER,h),e.bufferData(e.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),e.STATIC_DRAW);let p=e.getAttribLocation(r,"pos");e.enableVertexAttribArray(p),e.vertexAttribPointer(p,2,e.FLOAT,!1,0,0);let b=e.getUniformLocation(r,"t"),A=e.getUniformLocation(r,"res"),u=0,y=0;function g(c){let v=window.devicePixelRatio||1,a=t.clientWidth*v,x=t.clientHeight*v;(t.width!==a||t.height!==x)&&(t.width=a,t.height=x,e.viewport(0,0,a,x));let L=(c-y)*.001;y=c,s+=((d?4:.2)-s)*.05,u+=s*L,e.clearColor(0,0,0,0),e.clear(e.COLOR_BUFFER_BIT),e.uniform1f(b,u),e.uniform2f(A,t.width,t.height),e.drawArrays(e.TRIANGLE_STRIP,0,4),requestAnimationFrame(g)}t.style.display="block",requestAnimationFrame(g)};q();})();
+  `;function m(c,v){let a=e.createShader(c);return e.shaderSource(a,v),e.compileShader(a),a}let n=e.createProgram();if(e.attachShader(n,m(e.VERTEX_SHADER,f)),e.attachShader(n,m(e.FRAGMENT_SHADER,o)),e.linkProgram(n),!e.getProgramParameter(n,e.LINK_STATUS))return;e.useProgram(n),e.enable(e.BLEND),e.blendFunc(e.SRC_ALPHA,e.ONE_MINUS_SRC_ALPHA);let h=e.createBuffer();e.bindBuffer(e.ARRAY_BUFFER,h),e.bufferData(e.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),e.STATIC_DRAW);let x=e.getAttribLocation(n,"position");e.enableVertexAttribArray(x),e.vertexAttribPointer(x,2,e.FLOAT,!1,0,0);let b=e.getUniformLocation(n,"angle"),A=e.getUniformLocation(n,"resolution"),p=0,y=0;function g(c){let v=window.devicePixelRatio||1,a=t.clientWidth*v,u=t.clientHeight*v;(t.width!==a||t.height!==u)&&(t.width=a,t.height=u,e.viewport(0,0,a,u));let L=(c-y)*.001;y=c,i+=((l?4:.2)-i)*.05,p+=i*L,e.clearColor(0,0,0,0),e.clear(e.COLOR_BUFFER_BIT),e.uniform1f(b,p),e.uniform2f(A,t.width,t.height),e.drawArrays(e.TRIANGLE_STRIP,0,4),requestAnimationFrame(g)}t.style.display="block",requestAnimationFrame(g)};q();})();
