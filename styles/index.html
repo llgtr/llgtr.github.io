@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Styles • llgtr</title>
+
+  <meta charset="utf-8">
+  <meta name="language" content="en">
+  <meta name="description" content="llgtr's homepage">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" href="https://www.llgtr.com/scss/style.min.f9581aefc6adedac8e6373afdbc035186a7ef92e0a0186b3382a147e0603d67b.css" integrity="sha256-&#43;Vga78at7ayOY3Ov28A1GGp&#43;&#43;S4KAYazOCoUfgYD1ns=">
+
+  
+  
+  <script src="/js/app.js" defer></script>
+  <noscript><style>#hero-text { display: block !important }</style></noscript>
+</head>
+
+<body>
+  <div id="lightbox" class="lightbox">
+    <div id="lb-backdrop" class="lb-backdrop"></div>
+    <button id="lb-prev" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <img id="lb-img" class="lb-img" src="">
+    <button id="lb-next" class="lb-arrow">
+      <div class="lb-arrow-inner">
+        <img src="/icons/chevron-right.svg">
+      </div>
+    </button>
+    <button id="lb-close" class="lb-close"><img src="/icons/x.svg"></button>
+  </div>
+  <div class="container">
+    <nav class="flex row centered nav">
+  
+  
+    
+    <a
+      class=""
+      href="/"
+      title=""
+    >
+      ABOUT
+    </a>
+  
+    
+    <a
+      class=""
+      href="/photos/"
+      title=""
+    >
+      PHOTOS
+    </a>
+  
+</nav>
+
+    <main>
+      
+
+<div class="flex centered">
+  <div class="content-container">
+    <h1>Styles</h1>
+    <p>A reference for checking the commonly used elements on this site</p>
+<h1 id="heading-one">Heading one</h1>
+<h2 id="heading-two">Heading two</h2>
+<h3 id="heading-three">Heading three</h3>
+<h4 id="heading-four">Heading four</h4>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+<p>Body text with <em>italic</em>, <strong>bold</strong>, <del>strikethrough</del> and <code>inline code</code>.</p>
+<p>An <a href="https://duckduckgo.com">external link</a> and an <a href="/photos/">internal link</a> sit inline in a paragraph, alongside a footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Emoji: 🤔 💩</p>
+<ul>
+<li>unordered item</li>
+<li>another item
+<ul>
+<li>nested item</li>
+<li>nested item</li>
+</ul>
+</li>
+<li>last item</li>
+</ul>
+<ol>
+<li>ordered item</li>
+<li>another item</li>
+<li>last item</li>
+</ol>
+<blockquote>
+<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="cp">#[derive(Debug)]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">pub</span><span class="w"> </span><span class="k">enum</span> <span class="nc">State</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">Start</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">Closed</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">impl</span><span class="w"> </span><span class="nb">From</span><span class="o">&lt;&amp;</span><span class="na">&#39;a</span><span class="w"> </span><span class="kt">str</span><span class="o">&gt;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">State</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">fn</span> <span class="nf">from</span><span class="p">(</span><span class="n">s</span>: <span class="kp">&amp;</span><span class="na">&#39;a</span> <span class="kt">str</span><span class="p">)</span><span class="w"> </span>-&gt; <span class="nc">Self</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">match</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;start&#34;</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">State</span>::<span class="n">Start</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="s">&#34;closed&#34;</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">State</span>::<span class="n">Closed</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">_</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="fm">unreachable!</span><span class="p">(),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>left aligned</th>
+					<th style="text-align: center">centered</th>
+					<th style="text-align: right">right aligned</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>cell</td>
+					<td style="text-align: center">cell</td>
+					<td style="text-align: right">cell</td>
+			</tr>
+			<tr>
+					<td>cell</td>
+					<td style="text-align: center">cell</td>
+					<td style="text-align: right">cell</td>
+			</tr>
+	</tbody>
+</table>
+
+
+
+
+
+<figure>
+  <img
+    src="/img/test_hu_f8ef083daec6423d.jpg"
+    width="3000"
+    height="2000"
+    alt="test image"
+  >
+  <figcaption>
+  
+    
+  Caption
+
+  
+  </figcaption>
+</figure>
+
+<h1 id="colours">Colours</h1>
+<div class="swatches">
+  <div class="swatch-group">
+    <h4 class="swatch-group-title">Main</h4>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.525 0.098 223.571)" title="oklch(0.525 0.098 223.571)"></div>
+        <span class="swatch-name">$main-400</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.406 0.075 221.534)" title="oklch(0.406 0.075 221.534)"></div>
+        <span class="swatch-name">$main-600</span>
+      </div>
+    </div>
+  </div>
+  <div class="swatch-group">
+    <h4 class="swatch-group-title">Base</h4>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.171 0 none)" title="oklch(0.171 0 none)"></div>
+        <span class="swatch-name">$base-1000</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.223 0 none)" title="oklch(0.223 0 none)"></div>
+        <span class="swatch-name">$base-950</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.273 0 none)" title="oklch(0.273 0 none)"></div>
+        <span class="swatch-name">$base-900</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.365 0 none)" title="oklch(0.365 0 none)"></div>
+        <span class="swatch-name">$base-800</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.453 0 none)" title="oklch(0.453 0 none)"></div>
+        <span class="swatch-name">$base-700</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.538 0 none)" title="oklch(0.538 0 none)"></div>
+        <span class="swatch-name">$base-600</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.617 0 none)" title="oklch(0.617 0 none)"></div>
+        <span class="swatch-name">$base-500</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.696 0 none)" title="oklch(0.696 0 none)"></div>
+        <span class="swatch-name">$base-400</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.772 0 none)" title="oklch(0.772 0 none)"></div>
+        <span class="swatch-name">$base-300</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.846 0 none)" title="oklch(0.846 0 none)"></div>
+        <span class="swatch-name">$base-200</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.917 0 none)" title="oklch(0.917 0 none)"></div>
+        <span class="swatch-name">$base-100</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.954 0 none)" title="oklch(0.954 0 none)"></div>
+        <span class="swatch-name">$base-50</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.982 0 none)" title="oklch(0.982 0 none)"></div>
+        <span class="swatch-name">$base-0</span>
+      </div>
+    </div>
+  </div>
+  <div class="swatch-group">
+    <h4 class="swatch-group-title">Text</h4>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.223 0 none)" title="$base-950"></div>
+        <span class="swatch-name">$text-primary</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.453 0 none)" title="$base-700"></div>
+        <span class="swatch-name">$text-muted</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.617 0 none)" title="$base-500"></div>
+        <span class="swatch-name">$text-faint</span>
+      </div>
+    </div>
+  </div>
+  <div class="swatch-group">
+    <h4 class="swatch-group-title">Interface</h4>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.846 0 none)" title="$base-200"></div>
+        <span class="swatch-name">$interface-primary</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.772 0 none)" title="$base-300"></div>
+        <span class="swatch-name">$interface-hover</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.696 0 none)" title="$base-400"></div>
+        <span class="swatch-name">$interface-active</span>
+      </div>
+    </div>
+  </div>
+  <div class="swatch-group">
+    <h4 class="swatch-group-title">Background</h4>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.982 0 none)" title="$base-0"></div>
+        <span class="swatch-name">$background-primary</span>
+      </div>
+      <div class="swatch">
+        <div class="swatch-chip" style="background: oklch(0.917 0 none)" title="$base-100"></div>
+        <span class="swatch-name">$background-secondary</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The footnote itself&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </div>
+</div>
+
+
+    </main>
+    <div class="footer">
+  <p>Copyright &copy; 2026</p>
+</div>
+
+  </div>
+</body>
+
+</html>
