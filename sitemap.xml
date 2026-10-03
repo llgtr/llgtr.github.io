@@ -2,33 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.llgtr.com/photos/london/</loc>
-  </url><url>
-    <loc>https://www.llgtr.com/photos/scotland/</loc>
+    <loc>https://www.llgtr.com/photos/great-britain/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/brazil/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/spain/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/korea/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/japan/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/iceland/</loc>
+    <priority>0</priority>
   </url><url>
-    <loc>https://www.llgtr.com/photos/norway-lapland/</loc>
+    <loc>https://www.llgtr.com/photos/norway-and-lapland/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/monaco/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/jordan/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/kenya/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/zambia/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/doors/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/photos/misc/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.llgtr.com/</loc>
   </url><url>
